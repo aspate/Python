@@ -1,0 +1,40 @@
+
+JOE = "Joe's Gormet Burgers\n"
+MAINSTREET = "Main Street Pizza Company\n"
+CORNERCAFE = "Corner Cafe\n"
+MAMAS = "Mama's Fine Italian\n"
+CHEFS = "The Chef's Kitchen\n"
+yes = True
+no = False
+condition1 = input("Is anyone in your party a vegetarian?  ")
+
+if condition1 == 'yes':
+        condition2 = input("Is Anyone in your party a vegan?  ")
+        if condition2 == 'yes':
+            condition3 = input("Is anyone in your party gluten-free?  ")
+            if condition3 == 'yes':
+                print("Great, your restaurant choices are:\n, ", CORNERCAFE, CHEFS)
+            else:
+                print("Great, your restaurant choices are:\n ", CORNERCAFE, CHEFS)
+        else:
+            condition3 = input("Is anyone in your party gluten-free?  ")
+            if condition3 == 'yes':
+                print("Great, your restaurant choices are:\n ", MAINSTREET, CORNERCAFE, CHEFS)
+            else:
+                print("Great, your restaurant choices are:\n ", MAINSTREET, CORNERCAFE, MAMAS, CHEFS)
+else:
+        condition2 = input("Is anyone in your party a vegan?  ")
+        if condition2 == 'yes':
+            condition3 = input("Is anyone in your party gluten-free?  ")
+            if condition3 == 'yes':
+                print("Great, your restaurant choices are:\n ", CORNERCAFE, CHEFS)
+            else:
+                print("Great, your restaurant choices are:\n ", CORNERCAFE, CHEFS)
+        else:
+            condition3 = input("Is anyone in your party gluten-free?  ")
+            if condition3 == 'yes':
+                print("Great, your restaurant choices are:\n ", MAINSTREET, CORNERCAFE, CHEFS)
+            else:
+                print("Great, your restaurant choices are:\n", JOE, MAINSTREET, CORNERCAFE, CHEFS)
+
+print("Enjoy your meal!")
